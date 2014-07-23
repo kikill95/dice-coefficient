@@ -1,0 +1,12 @@
+{
+  "name": "dice-coefficient-gh-pages",
+  "private": true,
+  "repository": "wooorm/dice-coefficient",
+  "dependencies": {
+    "wooorm/dice-coefficient": "^0.1.0"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "license": "MIT"
+}
