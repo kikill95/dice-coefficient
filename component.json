@@ -3,7 +3,7 @@
   "private": true,
   "repository": "wooorm/dice-coefficient",
   "dependencies": {
-    "wooorm/dice-coefficient": "^0.1.0"
+    "wooorm/dice-coefficient": "^0.1.1"
   },
   "scripts": [
     "index.js"
