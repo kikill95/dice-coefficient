@@ -1,13 +1,36 @@
-var diceCoefficient = require('dice-coefficient');
-var inputElement = document.getElementsByTagName('input')[0];
-var referenceElement = document.getElementsByTagName('input')[1];
-var outputElement = document.getElementsByTagName('output')[0];
+'use strict';
 
-function getDistance() {
-    outputElement.textContent = diceCoefficient(inputElement.value, referenceElement.value);
+/**
+ * Dependencies.
+ */
+
+var diceCoefficient = require('wooorm/dice-coefficient@0.1.3');
+
+/**
+ * DOM elements.
+ */
+
+var $input = document.getElementsByTagName('input')[0];
+var $reference = document.getElementsByTagName('input')[1];
+var $output = document.getElementsByTagName('output')[0];
+
+/**
+ * Event handlers.
+ */
+
+function oninputchange() {
+    $output.textContent = diceCoefficient($input.value, $reference.value);
 }
 
-inputElement.addEventListener('input', getDistance);
-referenceElement.addEventListener('input', getDistance);
+/**
+ * Listen.
+ */
 
-getDistance();
+$input.addEventListener('input', oninputchange);
+$reference.addEventListener('input', oninputchange);
+
+/**
+ * Initial answer.
+ */
+
+oninputchange();
