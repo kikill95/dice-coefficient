@@ -2,4 +2,7 @@ node_modules
 bower_components
 components
 .DS_Store
+.nyc_output/
 coverage
+dice-coefficient.js
+dice-coefficient.min.js
