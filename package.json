@@ -2,7 +2,7 @@
   "name": "dice-coefficient-www",
   "private": true,
   "dependencies": {
-    "dice-coefficient": "^1.0.0"
+    "dice-coefficient": "^1.0.1"
   },
   "devDependencies": {
     "browserify": "^13.1.1"
